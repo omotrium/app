@@ -34,7 +34,7 @@ public class CustomerController {
         {
             LocalDateTime currentTime = LocalDateTime.now(ZoneOffset.UTC);
             DayOfWeek current_day = currentTime.getDayOfWeek();
-            String utc_time = currentTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"));
+            String utc_time = currentTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
 //        DateTime formattedTime = DateTime.now( DateTimeZone.UTC );
 
             String github_file_url = "https://spring-demo-project-vanjazz.onrender.com/api?slack_name=dayo&track=backend";
@@ -42,7 +42,7 @@ public class CustomerController {
 
             return new Endpoint(
                     slack_name,
-                    current_day.toString(),
+                    current_day.toString().substring(0,1) + current_day.toString().substring(1).toLowerCase(),
                     utc_time,
                     track,
                     github_file_url,
