@@ -42,7 +42,7 @@ public class CustomerController {
 
             return new Endpoint(
                     slack_name,
-                    currentDay.toString(),
+                    current_day.toString(),
                     utc_time,
                     track,
                     github_file_url,
