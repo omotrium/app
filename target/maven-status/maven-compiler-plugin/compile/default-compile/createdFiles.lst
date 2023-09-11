@@ -1,1 +1,4 @@
+com/javawhizz/App/AppApplication.class
 com/javawhizz/App/customer/Endpoint.class
+com/javawhizz/App/customer/Customer.class
+com/javawhizz/App/customer/CustomerController.class
