@@ -1,4 +1,3 @@
-com/javawhizz/App/AppApplication.class
-com/javawhizz/App/customer/Endpoint.class
-com/javawhizz/App/customer/Customer.class
-com/javawhizz/App/customer/CustomerController.class
+com/van2jazz/App/customer/Endpoint.class
+com/van2jazz/App/AppApplication.class
+com/van2jazz/App/customer/EndpointController.class
