@@ -37,7 +37,7 @@ public class CustomerController {
             String utc_time = currentTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
 //        DateTime formattedTime = DateTime.now( DateTimeZone.UTC );
 
-            String github_file_url = "https://spring-demo-project-vanjazz.onrender.com/api?slack_name=dayo&track=backend";
+            String github_file_url = "https://spring-demo-project-vanjazz.onrender.com/api?slack_name=balogun_dayo&track=backend";
             String github_repo_url = "https://github.com/van2jazz/endpoint_one";
 
             return new Endpoint(
