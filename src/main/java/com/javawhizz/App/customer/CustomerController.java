@@ -33,20 +33,20 @@ public class CustomerController {
                 @RequestParam String track)
         {
             LocalDateTime currentTime = LocalDateTime.now(ZoneOffset.UTC);
-            DayOfWeek currentDay = currentTime.getDayOfWeek();
-            String formattedTime = currentTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"));
+            DayOfWeek current_day = currentTime.getDayOfWeek();
+            String utc_time = currentTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"));
 //        DateTime formattedTime = DateTime.now( DateTimeZone.UTC );
 
-            String githubFileUrl = "https://spring-demo-project-vanjazz.onrender.com/api?slack_name=dayo&track=backend";
-            String githubRepoUrl = "https://github.com/van2jazz/endpoint_one";
+            String github_file_url = "https://spring-demo-project-vanjazz.onrender.com/api?slack_name=dayo&track=backend";
+            String github_file_url = "https://github.com/van2jazz/endpoint_one";
 
             return new Endpoint(
                     slack_name,
                     currentDay.toString(),
-                    formattedTime,
+                    utc_time,
                     track,
-                    githubFileUrl,
-                    githubRepoUrl,
+                    github_file_url,
+                    github_file_url,
                     200
             );
 
